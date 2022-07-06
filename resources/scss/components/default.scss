@@ -1,0 +1,64 @@
+// 공통
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	color: black;
+	vertical-align: baseline;
+}
+
+body {
+	min-width: 600px;
+
+	.conTitle {
+		display: flex;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		min-width: 500px;
+		padding: 5px;
+		background: #fff;
+
+		.linkBtn {
+			display: inline-block;
+			margin-right: 5px;
+			padding: 5px 10px;
+			border-radius: 5px;
+			background: rgb(49, 49, 49);
+			color: white;
+		}
+	}
+
+	.conBody {
+		position: relative;
+		top: 55px;
+		left: 0;
+		padding: 0 10px 10px;
+
+		.title {
+			margin: 20px 0 5px;
+			font-size: 20px;
+		}
+
+		.subTitle {
+			margin: 20px 0 5px;
+			font-size: 18px;
+		}
+
+		.guide {
+			.textBox {
+				height: 200px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				background: lightgoldenrodyellow;
+				padding: 20px;
+			}
+		}
+	}
+}

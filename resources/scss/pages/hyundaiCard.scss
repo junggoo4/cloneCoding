@@ -1,0 +1,117 @@
+// 공통
+@import "../../scss/components/default.scss";
+
+.bodyWrap {
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 500;
+		width: 100%;
+
+		.container {
+			height: 80px;
+			background-color: #eee;
+		}
+
+		.gnbBanner {
+			height: 50px;
+			background: #2ac1bc;
+		}
+	}
+
+	.footer {
+		height: 200px;
+		background-color: #eee;
+	}
+
+	// 컨텐츠 시작
+	.content {
+		position: relative;
+		margin-top: 80px;
+		min-height: calc(100vh - 200px);
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			width: 1600px;
+			margin: 0 auto;
+			padding-top: 50px;
+
+			.leftContent {
+				width: 1256px;
+				padding: 40px 64px 40px 0;
+
+				>div {
+					border: 1px solid black;
+				}
+
+				.banner {
+					height: 464px;
+				}
+
+				.cardOrigin {
+					height: 520px;
+				}
+
+				.cardBrands {
+					height: 520px;
+				}
+
+				.eventList {
+					height: 730px;
+				}
+			}
+
+			.rightContent {
+				width: 343px;
+				padding: 40px 0 40px 64px;
+
+				>div {
+					border: 1px solid black;
+				}
+
+				.loginWrap {
+					height: 374px;
+				}
+
+				.quickMenu {
+					height: 78px;
+					margin-top: 22px;
+				}
+
+				.infoList {
+					height: 320px;
+					margin-top: 52px;
+				}
+
+				.notice {
+					height: 195px;
+					margin-top: 52px;
+				}
+
+				.appBanner {
+					height: 106px;
+					margin-top: 28px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 1639px) {
+			.container {
+				width: 1200px;
+
+				.leftContent {
+					width: 855px;
+					padding: 40px 64px 40px 0;
+				}
+			}
+		}
+	}
+}
