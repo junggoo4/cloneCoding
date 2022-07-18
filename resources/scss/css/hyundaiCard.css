@@ -65,14 +65,14 @@ body .conBody .guide .textBox {
   padding: 20px;
 }
 
-.bodyWrap {
+.body_wrap {
   position: relative;
   top: 0;
   left: 0;
   overflow: hidden;
 }
 
-.bodyWrap .header {
+.body_wrap .header {
   position: fixed;
   top: 0;
   left: 0;
@@ -80,28 +80,28 @@ body .conBody .guide .textBox {
   width: 100%;
 }
 
-.bodyWrap .header .container {
+.body_wrap .header .container {
   height: 80px;
   background-color: #eee;
 }
 
-.bodyWrap .header .gnbBanner {
-  height: 50px;
-  background: #2ac1bc;
+.body_wrap .header .gnbBanner {
+  height: 48px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
-.bodyWrap .footer {
-  height: 200px;
+.body_wrap .footer {
+  height: 243px;
   background-color: #eee;
 }
 
-.bodyWrap .content {
+.body_wrap .content {
   position: relative;
   margin-top: 80px;
-  min-height: calc(100vh - 200px);
 }
 
-.bodyWrap .content .container {
+.body_wrap .content .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,70 +114,333 @@ body .conBody .guide .textBox {
   padding-top: 50px;
 }
 
-.bodyWrap .content .container .leftContent {
+.body_wrap .content .container .leftContent {
   width: 1256px;
   padding: 40px 64px 40px 0;
 }
 
-.bodyWrap .content .container .leftContent > div {
+.body_wrap .content .container .leftContent > div {
   border: 1px solid black;
 }
 
-.bodyWrap .content .container .leftContent .banner {
+.body_wrap .content .container .leftContent .banner {
   height: 464px;
 }
 
-.bodyWrap .content .container .leftContent .cardOrigin {
+.body_wrap .content .container .leftContent .cardOrigin {
   height: 520px;
 }
 
-.bodyWrap .content .container .leftContent .cardBrands {
+.body_wrap .content .container .leftContent .cardBrands {
   height: 520px;
 }
 
-.bodyWrap .content .container .leftContent .eventList {
+.body_wrap .content .container .leftContent .eventList {
   height: 730px;
 }
 
-.bodyWrap .content .container .rightContent {
+.body_wrap .content .container .rightContent {
   width: 343px;
   padding: 40px 0 40px 64px;
 }
 
-.bodyWrap .content .container .rightContent > div {
+.body_wrap .content .container .rightContent > div {
   border: 1px solid black;
 }
 
-.bodyWrap .content .container .rightContent .loginWrap {
+.body_wrap .content .container .rightContent .loginWrap {
   height: 374px;
 }
 
-.bodyWrap .content .container .rightContent .quickMenu {
+.body_wrap .content .container .rightContent .quickMenu {
   height: 78px;
   margin-top: 22px;
 }
 
-.bodyWrap .content .container .rightContent .infoList {
+.body_wrap .content .container .rightContent .infoList {
   height: 320px;
   margin-top: 52px;
 }
 
-.bodyWrap .content .container .rightContent .notice {
+.body_wrap .content .container .rightContent .notice {
   height: 195px;
   margin-top: 52px;
 }
 
-.bodyWrap .content .container .rightContent .appBanner {
+.body_wrap .content .container .rightContent .appBanner {
   height: 106px;
   margin-top: 28px;
 }
 
 @media screen and (max-width: 1639px) {
-  .bodyWrap .content .container {
+  .body_wrap .content .container {
     width: 1200px;
   }
-  .bodyWrap .content .container .leftContent {
+  .body_wrap .content .container .leftContent {
     width: 855px;
     padding: 40px 64px 40px 0;
   }
+}
+
+.link_btn {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+}
+
+.link_btn a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  line-height: 38px;
+}
+
+.h_coin {
+  position: relative;
+  width: 996px;
+  margin: 0 auto;
+  padding: 130px 0 160px;
+}
+
+.h_coin h2 {
+  height: 44px;
+  margin-top: 64px;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.h_coin .blue_link {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.h_coin .blue_link a {
+  display: inline-block;
+  position: relative;
+  padding-right: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #007aff;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+.h_coin .blue_link a:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 226px;
+  height: 1px;
+  background: #007aff;
+}
+
+.h_coin .blue_link a::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: url(../../image/content/hyundaiCard/ico_arrowB_forward_blue.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.h_coin .section.first_section {
+  margin-top: 72px;
+}
+
+.h_coin .section.first_section .txt_left {
+  position: relative;
+  padding: 40px 500px 0 0;
+}
+
+.h_coin .section.first_section .txt_left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 86px;
+  width: 367px;
+  height: 281px;
+  background: url(../../image/content/hyundaiCard/img_hcoin.png) no-repeat;
+  background-size: 100%;
+}
+
+.h_coin .section.first_section .txt_right {
+  position: relative;
+  margin-top: 160px;
+  padding: 63px 0 56px 487px;
+}
+
+.h_coin .section.first_section .txt_right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 297px;
+  height: 375px;
+  background: url(../../image/content/hyundaiCard/img1_hcoin.png) no-repeat;
+  background-size: 100%;
+}
+
+.h_coin .section h3 {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.h_coin .section .container h4 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 52px;
+  letter-spacing: -1px;
+}
+
+.h_coin .section .container .txt_gray {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #858585;
+  letter-spacing: -1px;
+}
+
+.h_coin .section .container .black_link {
+  display: inline-block;
+  position: relative;
+  margin-top: 24px;
+}
+
+.h_coin .section .container .black_link a {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-right: 24px;
+  letter-spacing: -1px;
+}
+
+.h_coin .section .container .black_link::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background: url(../../image/content/hyundaiCard/ico_arrowB_forward.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.h_coin .section.info_guide {
+  margin-top: 138px;
+}
+
+.h_coin .section.info_guide .container .guide_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.h_coin .section.info_guide .container .guide_list li {
+  position: relative;
+  width: 50%;
+}
+
+.h_coin .section.info_guide .container .guide_list li:nth-child(n+1):nth-child(-n+2) {
+  margin-top: 40px;
+  padding-top: 113px;
+}
+
+.h_coin .section.info_guide .container .guide_list li:first-child .black_link {
+  margin-top: 20px;
+}
+
+.h_coin .section.info_guide .container .guide_list li:nth-child(n+3) {
+  margin-top: 112px;
+  padding-top: 124px;
+}
+
+.h_coin .section.info_guide .container .guide_list li strong {
+  display: block;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 44px;
+  letter-spacing: -1px;
+}
+
+.h_coin .section.info_guide .container .guide_list li .txt_gray {
+  margin-top: 16px;
+}
+
+.h_coin .section.info_guide .container .guide_list li .txt_support {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+
+.h_coin .section.info_guide .container .guide_list li .black_link {
+  margin-top: 16px;
+}
+
+.h_coin .section.info_guide .container .guide_list li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 72px;
+  background: url(../../image/content/hyundaiCard/ico_bene_h2.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.h_coin .section.notice {
+  margin-top: 160px;
+  padding-top: 44px;
+  border-top: 1px solid #ebebeb;
+}
+
+.h_coin .section.notice h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.h_coin .section.notice ul {
+  margin-top: 20px;
+}
+
+.h_coin .section.notice ul li {
+  position: relative;
+  margin-top: 8px;
+  padding-left: 9px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.8px;
+}
+
+.h_coin .section.notice ul li::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #858585;
+  border-radius: 50%;
 }

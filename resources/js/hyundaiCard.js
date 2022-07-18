@@ -8,7 +8,7 @@ $(function () {
 	// right section 스크롤 이벤트
 	$(window).scroll(function () {
 		scrollIdx = $(window).scrollTop();
-		console.log(scrollIdx);
+		// console.log(scrollIdx);
 		headerChange();
 		rightContent();
 	});
@@ -21,17 +21,17 @@ $(function () {
 		}
 	};
 
-	// function rightContent() {
-	// 	if (scrollIdx < 500) {
-	// 		$(".rightContent").addClass("scrollOn");
-	// 	}
-	// }
+	function rightContent() {
+		if (scrollIdx < 500) {
+			$(".rightContent").addClass("scrollOn");
+		}
+	}
 
 	// 띠 배너 닫기 버튼
-	$(document).on("click", ".bannerClose", function () {
-		$(".gnbBanner").hide();
-		$(".container").css({
-			"padding-top": 0,
-		});
-	})
+	// $(document).on("click", ".bannerClose", function () {
+	// 	$(".gnbBanner").hide();
+	// 	$(".container").css({
+	// 		"padding-top": 0,
+	// 	});
+	// })
 });
