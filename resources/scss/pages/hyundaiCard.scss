@@ -121,9 +121,9 @@
 	display: inline-block;
 	border: 1px solid #bbb;
 	border-radius: 4px;
-	width: 100px;
 	height: 40px;
-	margin: 5px;
+	margin: 10px 0 0 5px;
+	padding: 0 12px;
 
 	a {
 		display: inline-block;
@@ -133,6 +133,10 @@
 		color: #000;
 		text-align: center;
 		line-height: 38px;
+	}
+
+	&:first-child {
+		margin-left: 10px;
 	}
 }
 
@@ -381,6 +385,485 @@
 						height: 2px;
 						background-color: #858585;
 						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 카드종합이용안내
+.sr_only {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	font-size: 1px;
+	color: transparent;
+	line-height: 0;
+	overflow: hidden;
+}
+
+.mt_40 {
+	margin-top: 40px !important;
+}
+
+.mb_0 {
+	margin-bottom: 0 !important;
+}
+
+.content_wrap {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 128px 0 160px;
+	line-height: 1.2;
+	letter-spacing: -0.8px !important;
+
+	h2 {
+		margin-top: 64px;
+		font-size: 32px;
+		text-align: center;
+	}
+
+	.content_tab {
+		margin-top: 50px;
+
+		.tab_menu {
+			white-space: nowrap;
+
+			.tab_list {
+				display: flex;
+				height: 40px;
+
+				li {
+					border-radius: 20px;
+					background-color: #eee;
+					text-align: center;
+					line-height: 40px;
+
+					&:not(:last-child) {
+						margin-right: 5px;
+					}
+
+					a {
+						display: block;
+						padding: 0 12px;
+						font-weight: bold;
+						color: #949494;
+
+						&.on {
+							border-radius: 20px;
+							background-color: #000;
+							color: #fff;
+						}
+					}
+
+					&:hover {
+						background-color: #ccc;
+					}
+				}
+			}
+		}
+
+		.container {
+			min-height: calc(100vh - 743px);
+
+			.content_box {
+				margin-top: 20px;
+
+				&:not(:first-child) {
+					display: none;
+				}
+
+				.sub_tab_list {
+					display: flex;
+
+					li {
+						position: relative;
+
+						&::before {
+							content: '';
+							position: absolute;
+							right: 0;
+							top: 13px;
+							width: 1px;
+							height: 14px;
+							background-color: #eee;
+						}
+
+						&:first-child {
+							a {
+								padding-left: 0;
+							}
+						}
+
+						&:last-child {
+							&::before {
+								display: none;
+							}
+						}
+
+						a {
+							display: block;
+							padding: 10px;
+							font-weight: bold;
+							color: #949494;
+
+							&.on {
+								color: #000;
+							}
+						}
+					}
+				}
+
+				.sub_content_box {
+					.content_box {
+						.section {
+							padding-top: 60px;
+
+							h5 {
+								font-weight: bold;
+								font-size: 24px;
+								padding-bottom: 18px;
+								margin-bottom: 24px;
+								border-bottom: 2px solid #000;
+							}
+
+							&.first {
+								ol {
+									>li {
+										&:not(:first-child) {
+											margin-top: 64px;
+										}
+
+										>strong {
+											font-weight: bold;
+											font-size: 20px;
+										}
+
+										.bul_list {
+											margin-top: 20px;
+
+											li {
+												position: relative;
+												padding-left: 8px;
+												font-size: 15px;
+												font-weight: 600;
+
+												&::before {
+													content: '';
+													position: absolute;
+													left: 0;
+													top: calc(50% - 1px);
+													width: 2px;
+													height: 2px;
+													background-color: #bbb;
+												}
+											}
+										}
+
+										>p {
+											margin-top: 20px;
+											font-weight: bold;
+											font-size: 16px;
+											line-height: 24px;
+										}
+
+										div {
+											margin-top: 15px;
+
+											&.box {
+												width: 100%;
+												border: 1px solid #ddd;
+												border-radius: 8px;
+												padding: 36px 10px;
+
+												>ul {
+													display: flex;
+
+													>li {
+														position: relative;
+														padding-top: 58px;
+														text-align: center;
+
+														p {
+															position: relative;
+															display: block;
+															margin: 10px 0 5px;
+															font-weight: bold;
+															font-size: 16px;
+
+															&::before {
+																content: '';
+																position: absolute;
+																top: -70px;
+																left: calc(50% - 32px);
+																width: 64px;
+																height: 64px;
+															}
+														}
+
+														span {
+															font-weight: bold;
+															font-size: 14px;
+															color: #858585;
+															line-height: 20px;
+														}
+													}
+												}
+											}
+										}
+
+										&:first-child {
+											div {
+												&.box {
+													ul {
+														>li {
+															flex: 0 0 25%;
+															width: 25%;
+
+															&:not(:last-child) {
+																&::before {
+																	content: '';
+																	position: absolute;
+																	top: calc(50% - 16px);
+																	right: 0;
+																	width: 32px;
+																	height: 32px;
+																	background: url(../../image/content/hyundaiCard/ico_plus.png) 0 0 no-repeat;
+																	background-size: cover
+																}
+															}
+
+															&:first-child {
+																p {
+																	&::before {
+																		background: url(../../image/content/hyundaiCard/ico_hat.png) 0 0 no-repeat;
+																		background-size: cover;
+																	}
+																}
+															}
+
+															&:nth-child(2) {
+																p {
+																	&::before {
+																		background: url(../../image/content/hyundaiCard/ico_monitor.png) 0 0 no-repeat;
+																		background-size: cover;
+																	}
+																}
+															}
+
+															&:nth-child(3) {
+																p {
+																	&::before {
+																		background: url(../../image/content/hyundaiCard/ico_headset.png) 0 0 no-repeat;
+																		background-size: cover;
+																	}
+																}
+															}
+
+															&:nth-child(4) {
+																p {
+																	&::before {
+																		background: url(../../image/content/hyundaiCard/ico_call_check2.png) 0 0 no-repeat;
+																		background-size: cover;
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+
+										&:nth-child(2) {
+											div {
+												&.box {
+													>ul {
+														width: 100%;
+														display: flex;
+														align-items: center;
+
+														>li {
+															flex-grow: 1;
+
+															&:first-child {
+																padding-top: 0;
+
+																>ul {
+																	display: flex;
+																	align-items: center;
+
+																	>li {
+																		position: relative;
+																		width: 33.33%;
+																		padding-top: 58px;
+
+																		&:not(:last-child) {
+																			&::before {
+																				content: '';
+																				position: absolute;
+																				top: calc(50% - 16px);
+																				right: -16px;
+																				width: 32px;
+																				height: 32px;
+																				background: url(../../image/content/hyundaiCard/ico_plus.png) 0 0 no-repeat;
+																				background-size: cover;
+																			}
+																		}
+
+																		&:nth-child(3) {
+																			&::before {
+																				display: none;
+																			}
+																		}
+
+																		p {
+																			&::before {
+																				content: '';
+																				position: absolute;
+																				top: -70px;
+																				left: calc(50% - 32px);
+																				width: 64px;
+																				height: 64px;
+																				background: url(../../image/content/hyundaiCard/ico_building.png) 0 0 no-repeat;
+																				background-size: cover;
+																			}
+																		}
+																	}
+																}
+															}
+
+															&:first-child {
+																&::before {
+																	display: none;
+																}
+															}
+
+															&:nth-child(2) {
+																position: relative;
+																flex-grow: 0;
+																width: 25%;
+
+																p {
+																	&::before {
+																		background: url(../../image/content/hyundaiCard/ico_doc_down.png) 0 0 no-repeat;
+																		background-size: cover;
+																	}
+																}
+
+																&::before {
+																	content: '';
+																	position: absolute;
+																	top: calc(50% - 16px);
+																	left: -16px;
+																	width: 32px;
+																	height: 32px;
+																	background: url(../../image/content/hyundaiCard/ico_arrowB_forward.png) 0 0 no-repeat;
+																	background-size: cover;
+																	opacity: 0.2;
+																}
+															}
+														}
+													}
+												}
+
+												&.box_column {
+													ul {
+														li {
+															&:first-child {
+																padding-top: 0;
+
+																>ul {
+																	flex-wrap: wrap;
+
+																	li {
+																		&:not(:nth-child(-n+3)) {
+																			margin-top: 35px;
+																		}
+
+																		p {
+																			&::before {
+																				content: '';
+																				position: absolute;
+																				top: -70px;
+																				left: calc(50% - 32px);
+																				width: 64px;
+																				height: 64px;
+																				background: url(../../image/content/hyundaiCard/ico_cal_money.png) 0 0 no-repeat;
+																				background-size: cover;
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							>.accordion_list {
+								// border: 1px solid red;
+
+								dl {
+									border-bottom: 1px solid #ddd;
+
+									dt {
+										position: relative;
+										padding: 20px 60px 20px 42px;
+										font-weight: bold;
+										font-size: 16px;
+										line-height: 26px;
+										cursor: pointer;
+
+										&::before {
+											content: 'Q.';
+											position: absolute;
+											top: 19px;
+											left: 20px;
+										}
+
+										button {
+											&.btn {
+												position: absolute;
+												right: 16px;
+												top: 20px;
+												width: 24px;
+												height: 24px;
+												background: url(../../image/content/hyundaiCard/ico_arrowB_down.png) center center no-repeat;
+												background-size: cover;
+												line-height: 100px;
+												overflow: hidden;
+												transform: rotate(0);
+												cursor: pointer;
+											}
+										}
+
+										&.on {
+											button {
+												&.btn {
+													transform: rotate(180deg);
+												}
+											}
+										}
+									}
+
+									dd {
+										display: none;
+										height: auto;
+										padding: 0 40px 20px;
+										font-size: 16px;
+										line-height: 26px;
+									}
+								}
+							}
+						}
 					}
 				}
 			}

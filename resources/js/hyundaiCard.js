@@ -34,4 +34,36 @@ $(function () {
 	// 		"padding-top": 0,
 	// 	});
 	// })
+
+	// 카드종합이용안내
+	$('.content_tab > .tab_menu .tab_list a').on('click', function () {
+		var obj = $(this);
+		var tg = obj.data('tab-tg');
+		obj.addClass('on').attr('title', '선택됨').parent().siblings().find('>a').removeClass().removeAttr('title');
+		$('[data-content]').hide();
+		$('[data-content=' + tg + ']').show();
+	});
+
+	$('.sub_tab_list li a').on('click', function () {
+		var tabOn = $(this);
+		var tabTg = tabOn.data('sub-tab');
+		tabOn.addClass('on').attr('title', '선택됨').parent().siblings().find('>a').removeClass().removeAttr('title');
+		$('[data-sub-content]').hide();
+		$('[data-sub-content=' + tabTg + ']').show();
+	});
+
+	$(".accordion_list > dl dt").on("click", function () {
+		toggleOn = $(this);
+		if (toggleOn.hasClass("on")) {
+			toggleOn.removeClass("on");
+			toggleOn.next("dd").stop().slideUp(300);
+			toggleOn.find(".btn").text("열기");
+			toggleOn.parent("dl").css("background", "#fff");
+		} else {
+			toggleOn.addClass("on");
+			toggleOn.next("dd").stop().slideDown(300);
+			toggleOn.find(".btn").text("닫기");
+			toggleOn.parent("dl").css("background", "#eee");
+		}
+	})
 });

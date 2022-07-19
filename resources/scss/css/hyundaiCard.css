@@ -186,9 +186,9 @@ body .conBody .guide .textBox {
   display: inline-block;
   border: 1px solid #bbb;
   border-radius: 4px;
-  width: 100px;
   height: 40px;
-  margin: 5px;
+  margin: 10px 0 0 5px;
+  padding: 0 12px;
 }
 
 .link_btn a {
@@ -199,6 +199,10 @@ body .conBody .guide .textBox {
   color: #000;
   text-align: center;
   line-height: 38px;
+}
+
+.link_btn:first-child {
+  margin-left: 10px;
 }
 
 .h_coin {
@@ -443,4 +447,429 @@ body .conBody .guide .textBox {
   height: 2px;
   background-color: #858585;
   border-radius: 50%;
+}
+
+.sr_only {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  font-size: 1px;
+  color: transparent;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.mt_40 {
+  margin-top: 40px !important;
+}
+
+.mb_0 {
+  margin-bottom: 0 !important;
+}
+
+.content_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 128px 0 160px;
+  line-height: 1.2;
+  letter-spacing: -0.8px !important;
+}
+
+.content_wrap h2 {
+  margin-top: 64px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.content_wrap .content_tab {
+  margin-top: 50px;
+}
+
+.content_wrap .content_tab .tab_menu {
+  white-space: nowrap;
+}
+
+.content_wrap .content_tab .tab_menu .tab_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+}
+
+.content_wrap .content_tab .tab_menu .tab_list li {
+  border-radius: 20px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 40px;
+}
+
+.content_wrap .content_tab .tab_menu .tab_list li:not(:last-child) {
+  margin-right: 5px;
+}
+
+.content_wrap .content_tab .tab_menu .tab_list li a {
+  display: block;
+  padding: 0 12px;
+  font-weight: bold;
+  color: #949494;
+}
+
+.content_wrap .content_tab .tab_menu .tab_list li a.on {
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.content_wrap .content_tab .tab_menu .tab_list li:hover {
+  background-color: #ccc;
+}
+
+.content_wrap .content_tab .container {
+  min-height: calc(100vh - 743px);
+}
+
+.content_wrap .content_tab .container .content_box {
+  margin-top: 20px;
+}
+
+.content_wrap .content_tab .container .content_box:not(:first-child) {
+  display: none;
+}
+
+.content_wrap .content_tab .container .content_box .sub_tab_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content_wrap .content_tab .container .content_box .sub_tab_list li {
+  position: relative;
+}
+
+.content_wrap .content_tab .container .content_box .sub_tab_list li::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 13px;
+  width: 1px;
+  height: 14px;
+  background-color: #eee;
+}
+
+.content_wrap .content_tab .container .content_box .sub_tab_list li:first-child a {
+  padding-left: 0;
+}
+
+.content_wrap .content_tab .container .content_box .sub_tab_list li:last-child::before {
+  display: none;
+}
+
+.content_wrap .content_tab .container .content_box .sub_tab_list li a {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  color: #949494;
+}
+
+.content_wrap .content_tab .container .content_box .sub_tab_list li a.on {
+  color: #000;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section {
+  padding-top: 60px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section h5 {
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #000;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:not(:first-child) {
+  margin-top: 64px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li > strong {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li .bul_list {
+  margin-top: 20px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li .bul_list li {
+  position: relative;
+  padding-left: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li .bul_list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1px);
+  width: 2px;
+  height: 2px;
+  background-color: #bbb;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li > p {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li div {
+  margin-top: 15px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li div.box {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 36px 10px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li div.box > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li div.box > ul > li {
+  position: relative;
+  padding-top: 58px;
+  text-align: center;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li div.box > ul > li p {
+  position: relative;
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li div.box > ul > li p::before {
+  content: '';
+  position: absolute;
+  top: -70px;
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li div.box > ul > li span {
+  font-weight: bold;
+  font-size: 14px;
+  color: #858585;
+  line-height: 20px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:first-child div.box ul > li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  width: 25%;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:first-child div.box ul > li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 16px);
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background: url(../../image/content/hyundaiCard/ico_plus.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:first-child div.box ul > li:first-child p::before {
+  background: url(../../image/content/hyundaiCard/ico_hat.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:first-child div.box ul > li:nth-child(2) p::before {
+  background: url(../../image/content/hyundaiCard/ico_monitor.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:first-child div.box ul > li:nth-child(3) p::before {
+  background: url(../../image/content/hyundaiCard/ico_headset.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:first-child div.box ul > li:nth-child(4) p::before {
+  background: url(../../image/content/hyundaiCard/ico_call_check2.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li:first-child {
+  padding-top: 0;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li:first-child > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li:first-child > ul > li {
+  position: relative;
+  width: 33.33%;
+  padding-top: 58px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li:first-child > ul > li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 16px);
+  right: -16px;
+  width: 32px;
+  height: 32px;
+  background: url(../../image/content/hyundaiCard/ico_plus.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li:first-child > ul > li:nth-child(3)::before {
+  display: none;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li:first-child > ul > li p::before {
+  content: '';
+  position: absolute;
+  top: -70px;
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+  background: url(../../image/content/hyundaiCard/ico_building.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li:first-child::before {
+  display: none;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li:nth-child(2) {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  width: 25%;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li:nth-child(2) p::before {
+  background: url(../../image/content/hyundaiCard/ico_doc_down.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box > ul > li:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 16px);
+  left: -16px;
+  width: 32px;
+  height: 32px;
+  background: url(../../image/content/hyundaiCard/ico_arrowB_forward.png) 0 0 no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box_column ul li:first-child {
+  padding-top: 0;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box_column ul li:first-child > ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box_column ul li:first-child > ul li:not(:nth-child(-n+3)) {
+  margin-top: 35px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section.first ol > li:nth-child(2) div.box_column ul li:first-child > ul li p::before {
+  content: '';
+  position: absolute;
+  top: -70px;
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+  background: url(../../image/content/hyundaiCard/ico_cal_money.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section > .accordion_list dl {
+  border-bottom: 1px solid #ddd;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section > .accordion_list dl dt {
+  position: relative;
+  padding: 20px 60px 20px 42px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section > .accordion_list dl dt::before {
+  content: 'Q.';
+  position: absolute;
+  top: 19px;
+  left: 20px;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section > .accordion_list dl dt button.btn {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  background: url(../../image/content/hyundaiCard/ico_arrowB_down.png) center center no-repeat;
+  background-size: cover;
+  line-height: 100px;
+  overflow: hidden;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  cursor: pointer;
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section > .accordion_list dl dt.on button.btn {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.content_wrap .content_tab .container .content_box .sub_content_box .content_box .section > .accordion_list dl dd {
+  display: none;
+  height: auto;
+  padding: 0 40px 20px;
+  font-size: 16px;
+  line-height: 26px;
 }
